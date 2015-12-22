@@ -7,8 +7,8 @@ LABEL description="Quagga smoke and compilation test."
 
 RUN apt-get clean
 RUN apt-get update
-RUN apt-get -qqy install git dh-autoreconf readline-devel texinfo
-RUN apt-get -qqy install quagga-devel
+RUN apt-get -qqy install git dh-autoreconf libreadline-dev texinfo
+RUN apt-get -qqy install quagga
 
 WORKDIR /home/q/src
 RUN git clone git://git.sv.gnu.org/quagga.git
