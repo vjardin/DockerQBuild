@@ -5,6 +5,7 @@ MAINTAINER Vincent Jardin <vj@6wind.com>
 LABEL version="head"
 LABEL description="Quagga smoke and compilation test."
 
+ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get clean
 RUN apt-get update
 RUN apt-get -qqy install git dh-autoreconf libreadline-dev texinfo
